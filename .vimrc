@@ -36,17 +36,16 @@ set smartcase
 nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
 
 nnoremap <Leader><Leader> :e#<CR>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 inoremap jk <esc>
 
 set autowriteall
 
 set showmatch
 set backspace=indent,eol,start
-
-map <leader>s :source ~/.vimrc<CR>
-
-" command-t
-set wildignore+=*.log,*.sql,*.cache,*/node_modules,*/reports,*/tmp/cache/*,*/tmp,.DS_Store
 
 " nerdtree
 let NERDTreeShowHidden=1
@@ -59,3 +58,5 @@ set rtp+=/usr/local/opt/fzf
 let g:fzf_action = {
   \ 's': 'vsplit',
   \ 'h': 'split' }
+
+map <leader>s :source ~/.vimrc<CR>

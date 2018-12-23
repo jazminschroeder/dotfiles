@@ -11,4 +11,4 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 eval "$(rbenv init -)"
-# Customize to your needs...
+export EDITOR=vim
