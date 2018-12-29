@@ -43,6 +43,7 @@ nnoremap <C-H> <C-W><C-H>
 inoremap jk <esc>
 
 set autowriteall
+set autoread
 
 set showmatch
 set backspace=indent,eol,start
@@ -58,5 +59,10 @@ set rtp+=/usr/local/opt/fzf
 let g:fzf_action = {
   \ 's': 'vsplit',
   \ 'h': 'split' }
+
+" Store temporary files in a central spot
+set backup
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 map <leader>s :source ~/.vimrc<CR>
